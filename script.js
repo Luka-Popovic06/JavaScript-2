@@ -9,3 +9,15 @@ function calculateDiscaunt(cena, popust) {
 }
 const racun = calculateDiscaunt(100, 20);
 console.log(racun);
+/*2*/
+
+function izmedjuJedanIDvadeset(broj) {
+  if (broj >= 1 && broj <= 20) {
+    const brojIzmedju = "jeste izmedju 1 i 20";
+    return brojIzmedju;
+  } else {
+    const brojNije = "nije izmedju 1 i 20";
+    return brojNije;
+  }
+}
+console.log(izmedjuJedanIDvadeset(5));
