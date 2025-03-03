@@ -2,10 +2,11 @@
 /*1*/
 
 function calculateDiscaunt(cena, popust) {
-  const calculate = `Cena je ${cena}, popust je ${popust}, cena sa popustom je ${
-    cena - cena * (popust / 100)
-  }`;
-  return calculate;
+  const priceWithDiscount = cena - cena * (popust / 100);
+  const calculate = `Cena je ${cena}, popust je ${popust}, cena sa popustom je 
+  ${priceWithDiscount}`;
+  console.log(calculate);
+  return priceWithDiscount;
 }
 const racun = calculateDiscaunt(100, 20);
 console.log(racun);
