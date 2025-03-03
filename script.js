@@ -21,3 +21,13 @@ function izmedjuJedanIDvadeset(broj) {
   }
 }
 console.log(izmedjuJedanIDvadeset(5));
+/*3*/
+
+function combineStrings(ime, prezime) {
+  const imeJed = `Moje ime je ${ime}, moje prezime je ${prezime}, zajedno se pisu ${
+    ime + prezime
+  }.`;
+  return imeJed;
+}
+const imePrezime = combineStrings("Luka", "Popovic");
+console.log(imePrezime);
