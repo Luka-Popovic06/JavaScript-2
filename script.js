@@ -48,10 +48,19 @@ function isPositive(broj) {
   return pozitivanNegativan;
 }
 isPositive(-3);
-/*7*/
+
+/*6*/
+
 function maxOfTwoNumbers(brojJedan, brojDva) {
   const max = brojJedan > brojDva ? brojJedan : brojDva;
   console.log(max);
   return max;
 }
-maxOfTwoNumbers(15, 10);
+maxOfTwoNumbers(15, 20);
+
+/*7*/
+
+function isWeekend(dan) {
+  console.log(dan === "Nedelja" || dan === "Subota");
+}
+isWeekend("Subota");
