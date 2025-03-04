@@ -32,3 +32,11 @@ function combineStrings(ime, prezime) {
 }
 const imePrezime = combineStrings("Luka", "Popovic");
 console.log(imePrezime);
+
+/*4*/
+function canDrive(godine) {
+  const drive = godine >= 18 ? "true" : "false";
+  console.log(drive);
+  return drive;
+}
+canDrive(18);
