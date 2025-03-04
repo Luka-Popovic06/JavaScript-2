@@ -40,3 +40,11 @@ function canDrive(godine) {
   return drive;
 }
 canDrive(18);
+
+/*5*/
+function isPositive(broj) {
+  const pozitivanNegativan = 0 <= broj ? "true" : "false";
+  console.log(pozitivanNegativan);
+  return pozitivanNegativan;
+}
+isPositive(-3);
