@@ -64,3 +64,14 @@ function isWeekend(dan) {
   console.log(dan === "Nedelja" || dan === "Subota");
 }
 isWeekend("Subota");
+
+/*8*/
+
+function isValidPassword(password) {
+  if (password.length > 8) {
+    console.log("Lozinka je duza od 8 karaktera");
+  } else {
+    console.log("Nije duza od 8 karaktera");
+  }
+}
+isValidPassword("MojaLozinka1234");
