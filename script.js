@@ -48,3 +48,10 @@ function isPositive(broj) {
   return pozitivanNegativan;
 }
 isPositive(-3);
+/*7*/
+function maxOfTwoNumbers(brojJedan, brojDva) {
+  const max = brojJedan > brojDva ? brojJedan : brojDva;
+  console.log(max);
+  return max;
+}
+maxOfTwoNumbers(15, 10);
