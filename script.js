@@ -82,3 +82,11 @@ function calculateTicketPrice(age) {
   return card;
 }
 calculateTicketPrice(16);
+/*10*/
+function getInitials(ime, prezime) {
+  const inicijalJedan = ime.charAt(0);
+  const inicijalDva = prezime.charAt(0);
+  console.log(inicijalJedan, inicijalDva);
+  return getInitials;
+}
+getInitials("Luka", "Popovic");
