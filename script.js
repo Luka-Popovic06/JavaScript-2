@@ -35,16 +35,17 @@ console.log(imePrezime);
 
 /*4*/
 function canDrive(godine) {
-  const drive = godine >= 18 ? "true" : "false";
-  console.log(drive);
+  const driveing = godine >= 18;
+  const drive = godine >= 18 ? console.log(driveing) : console.log(driveing);
   return drive;
 }
 canDrive(18);
 
 /*5*/
 function isPositive(broj) {
-  const pozitivanNegativan = 0 <= broj ? "true" : "false";
-  console.log(pozitivanNegativan);
+  const negative = 0 <= broj;
+  const pozitivanNegativan =
+    0 <= broj ? console.log(negative) : console.log(negative);
   return pozitivanNegativan;
 }
 isPositive(-3);
@@ -75,14 +76,8 @@ function isValidPassword(password) {
   }
 }
 isValidPassword("MojaLozinka1234");
+
 /*9*/
-function calculateTicketPrice(age) {
-  const card = age < 15 ? "50e" : "70e";
-  console.log(card);
-  return card;
-}
-calculateTicketPrice(16);
-/*10*/
 function getInitials(ime, prezime) {
   const inicijalJedan = ime.charAt(0);
   const inicijalDva = prezime.charAt(0);
@@ -90,3 +85,19 @@ function getInitials(ime, prezime) {
   return getInitials;
 }
 getInitials("Luka", "Popovic");
+
+/*10*/
+function calculateTicketPrice(age) {
+  const card = age < 15 ? "50e" : "70e";
+  console.log(card);
+  return card;
+}
+calculateTicketPrice(16);
+
+/*11*/
+function input(string) {
+  const inputOne = string === "";
+  const inputE = string === "" ? console.log(inputOne) : console.log(inputOne);
+  return inputE;
+}
+input("");
