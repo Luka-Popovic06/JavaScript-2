@@ -75,3 +75,10 @@ function isValidPassword(password) {
   }
 }
 isValidPassword("MojaLozinka1234");
+/*9*/
+function calculateTicketPrice(age) {
+  const card = age < 15 ? "50e" : "70e";
+  console.log(card);
+  return card;
+}
+calculateTicketPrice(16);
