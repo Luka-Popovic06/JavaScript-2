@@ -101,3 +101,11 @@ function input(string) {
   return inputE;
 }
 input("");
+/*12*/
+function inputeDva(stringDva) {
+  const inputTwo = stringDva.length === 0;
+  const inputeS =
+    stringDva.length === 0 ? console.log(inputTwo) : console.log(inputTwo);
+  return inputeS;
+}
+inputeDva("");
