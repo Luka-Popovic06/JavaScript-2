@@ -33,9 +33,11 @@ function combineStrings(ime, prezime) {
 const imePrezime = combineStrings("Luka", "Popovic");
 console.log(imePrezime);
 
+/* Novi zadatak (2)*/
+
 /*4*/
 function canDrive(godine) {
-  const driveing = godine >= 18;
+  const driveing = godine >= 18 ? true : false;
   const drive = godine >= 18 ? console.log(driveing) : console.log(driveing);
   return drive;
 }
@@ -108,4 +110,23 @@ function inputeDva(stringDva) {
     stringDva.length === 0 ? console.log(inputTwo) : console.log(inputTwo);
   return inputeS;
 }
-inputeDva("");
+/*inputeDva("");
+function checkInput(input) {
+  /*if (input==false){}*/
+/*if (input)*/
+
+/*Zadatak 3*/
+/*13*/
+function login(username, password) {
+  if (username === "admin") {
+    console.log(true);
+  } else if (username === "monkey" && password === "123") {
+    console.log(true);
+  } else if (username === "moomoo" && password === "farm") {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+  return login;
+}
+login("monkey", "123");
