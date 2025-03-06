@@ -129,4 +129,8 @@ function login(username, password) {
   }
   return login;
 }
-login("monkey", "123");
+const test = login("hello", "meow");
+const test2 = login("admin", "lol");
+const test3 = login("monkey", "123");
+const test4 = login("moomoo", "farm");
+const test5 = login("moomoo", "moo");
