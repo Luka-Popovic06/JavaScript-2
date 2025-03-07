@@ -178,3 +178,31 @@ function calculateYearsUntilRetreat() {
   return calculateYearsUntilRetreat;
 }
 calculateYearsUntilRetreat();
+/*4*/
+function getSalary() {
+  console.log(plata);
+  return getSalary;
+}
+getSalary();
+/*5*/
+function setSalary(povisica) {
+  const povecanje = plata + povisica;
+  console.log(povecanje);
+  return povecanje;
+}
+setSalary(1000);
+/*6*/
+function getLastYearRaise() {
+  if (setLastYearsRaise !== poslednjaPovisica) {
+    console.log(poslednjaPovisica);
+  }
+  return getLastYearRaise;
+}
+getLastYearRaise();
+/*7*/
+function setLastYearsRaise(raise) {
+  if (poslednjaPovisica !== raise) {
+    console.log(raise);
+  }
+}
+setLastYearsRaise(2200);
