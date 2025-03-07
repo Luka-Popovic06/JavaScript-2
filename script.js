@@ -139,12 +139,42 @@ const test5 = login("moomoo", "moo");
 
 /*14*/
 
-const ime = "marko";
-const prezime = "markovic";
+const ime = "Marko";
+const prezime = "Markovic";
 const godine = 32;
 const plata = 3000;
+const trenutnaGodina = 2027;
 const godinaZaposlenja = 2024;
 const poslednjaPovisica = 2020;
 const zemlja = "Srbija";
 const ulica = "Petra petrovica 25";
 const brojTelefona = "069 123456";
+/*1*/
+function getInfo() {
+  console.log(
+    ime,
+    prezime,
+    godine,
+    plata,
+    trenutnaGodina,
+    godinaZaposlenja,
+    poslednjaPovisica,
+    zemlja,
+    ulica,
+    brojTelefona
+  );
+  return getInfo;
+}
+getInfo();
+/*2*/
+function calculateWorkYears() {
+  console.log(trenutnaGodina - godinaZaposlenja);
+  return calculateWorkYears;
+}
+calculateWorkYears();
+/*3*/
+function calculateYearsUntilRetreat() {
+  console.log(65 - godine);
+  return calculateYearsUntilRetreat;
+}
+calculateYearsUntilRetreat();
