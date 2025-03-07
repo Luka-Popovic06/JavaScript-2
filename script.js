@@ -116,7 +116,9 @@ function checkInput(input) {
 /*if (input)*/
 
 /*Zadatak 3*/
+
 /*13*/
+
 function login(username, password) {
   if (username === "admin") {
     console.log(true);
@@ -134,3 +136,15 @@ const test2 = login("admin", "lol");
 const test3 = login("monkey", "123");
 const test4 = login("moomoo", "farm");
 const test5 = login("moomoo", "moo");
+
+/*14*/
+
+const ime = "marko";
+const prezime = "markovic";
+const godine = 32;
+const plata = 3000;
+const godinaZaposlenja = 2024;
+const poslednjaPovisica = 2020;
+const zemlja = "Srbija";
+const ulica = "Petra petrovica 25";
+const brojTelefona = "069 123456";
