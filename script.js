@@ -205,4 +205,11 @@ function setLastYearsRaise(raise) {
     console.log(raise);
   }
 }
-setLastYearsRaise(2200);
+setLastYearsRaise(2027);
+/*8*/
+function calculateRaise(broj) {
+  const calcuLate = plata + plata * (broj / 100);
+  console.log(calcuLate);
+  return calcuLate;
+}
+calculateRaise(15);
