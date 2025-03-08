@@ -213,3 +213,10 @@ function calculateRaise(broj) {
   return calcuLate;
 }
 calculateRaise(15);
+function isEligibleForRaise(plus) {
+  if (poslednjaPovisica < trenutnaGodina) {
+    console.log(plata + plus);
+  }
+  return isEligibleForRaise;
+}
+isEligibleForRaise(1000);
