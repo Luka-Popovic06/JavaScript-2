@@ -139,6 +139,8 @@ const test5 = login("moomoo", "moo");
 
 /*14*/
 
+/*15*/
+
 const ime = "Marko";
 const prezime = "Markovic";
 const godine = 32;
@@ -208,11 +210,11 @@ function setLastYearsRaise(raise) {
 setLastYearsRaise(2027);
 /*8*/
 function calculateRaise(broj) {
-  const calcuLate = plata + plata * (broj / 100);
-  console.log(calcuLate);
+  const calcuLate = plata * (broj / 100);
   return calcuLate;
 }
 calculateRaise(15);
+/*9*/
 function isEligibleForRaise(plus) {
   if (poslednjaPovisica < trenutnaGodina) {
     console.log(plata + plus);
@@ -220,3 +222,11 @@ function isEligibleForRaise(plus) {
   return isEligibleForRaise;
 }
 isEligibleForRaise(1000);
+/*10 */
+function raiseSalary() {
+  const novaPlata = plata + calculateRaise(15);
+  calculateRaise(15);
+  console.log(novaPlata);
+  return raiseSalary;
+}
+raiseSalary();
