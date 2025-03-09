@@ -137,8 +137,37 @@ const test3 = login("monkey", "123");
 const test4 = login("moomoo", "farm");
 const test5 = login("moomoo", "moo");
 
-/*14*/
+/*14l*/
+function convertDistance(brojDistanca, vrednost) {
+  if (vrednost === "m") {
+    const conD = convertDistanceToM(brojDistanca);
+    console.log(conD);
+  } else if (vrednost === "km") {
+    const convertedDistance = convertDistanceToKilometers(brojDistanca);
+    console.log(convertedDistance);
+  } else {
+    const lune = errorEe();
+    console.log(lune);
+  }
+}
+convertDistance(2, "m");
 
+function errorEe(message) {
+  throw new Error("can not do that");
+}
+errorEe("can not do that");
+
+function convertDistanceToKilometers(metar) {
+  const kilometri = metar / 1000;
+  return kilometri;
+}
+convertDistanceToKilometers();
+
+function convertDistanceToM(kilometar) {
+  const metar = kilometar * 1000;
+  return metar;
+}
+convertDistanceToM();
 /*15*/
 
 const ime = "Marko";
