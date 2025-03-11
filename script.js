@@ -167,7 +167,7 @@ convertDistanceToM();
 const ime = "Marko";
 const prezime = "Markovic";
 const godine = 32;
-const plata = 3000;
+let plata = 3000;
 const trenutnaGodina = 2027;
 const godinaZaposlenja = 2024;
 const poslednjaPovisica = 2020;
@@ -212,10 +212,11 @@ function getSalary() {
 }
 getSalary();
 /*5*/
-function setSalary(povisica) {
-  const povecanje = plata + povisica;
+function setSalary(novaPlata) {
+  plata = novaPlata;
+  /*const povecanje = plata + povisica;
   console.log(povecanje);
-  return povecanje;
+  return povecanje;*/
 }
 setSalary(1000);
 /*6*/
@@ -249,9 +250,9 @@ function isEligibleForRaise(plus) {
 isEligibleForRaise(1000);
 /*10 */
 function raiseSalary() {
-  const novaPlata = plata + calculateRaise(15);
-  calculateRaise(15);
+  const novaPlata = getSalary() + calculateRaise(15);
   console.log(novaPlata);
-  return raiseSalary;
+  setSalary(novaPlata);
+  return novaPlata;
 }
 raiseSalary();
