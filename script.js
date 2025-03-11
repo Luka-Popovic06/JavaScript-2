@@ -146,16 +146,10 @@ function convertDistance(brojDistanca, vrednost) {
     const convertedDistance = convertDistanceToKilometers(brojDistanca);
     console.log(convertedDistance);
   } else {
-    const lune = errorEe();
-    console.log(lune);
+    throw new Error("nepoznata distanca");
   }
 }
-convertDistance(2, "m");
-
-function errorEe(message) {
-  throw new Error("can not do that");
-}
-errorEe("can not do that");
+convertDistance(3, "m");
 
 function convertDistanceToKilometers(metar) {
   const kilometri = metar / 1000;
@@ -199,20 +193,22 @@ function getInfo() {
 getInfo();
 /*2*/
 function calculateWorkYears() {
-  console.log(trenutnaGodina - godinaZaposlenja);
-  return calculateWorkYears;
+  const yeraOfWork = trenutnaGodina - godinaZaposlenja;
+  console.log(yeraOfWork);
+  return yeraOfWork;
 }
 calculateWorkYears();
 /*3*/
 function calculateYearsUntilRetreat() {
-  console.log(65 - godine);
-  return calculateYearsUntilRetreat;
+  const penzija = 65 - godine;
+  console.log(penzija);
+  return penzija;
 }
 calculateYearsUntilRetreat();
 /*4*/
 function getSalary() {
   console.log(plata);
-  return getSalary;
+  return plata;
 }
 getSalary();
 /*5*/
@@ -224,22 +220,22 @@ function setSalary(povisica) {
 setSalary(1000);
 /*6*/
 function getLastYearRaise() {
-  if (setLastYearsRaise !== poslednjaPovisica) {
+  /*if (setLastYearsRaise !== poslednjaPovisica) {
     console.log(poslednjaPovisica);
-  }
-  return getLastYearRaise;
+  }*/
+  return poslednjaPovisica;
 }
 getLastYearRaise();
 /*7*/
 function setLastYearsRaise(raise) {
-  if (poslednjaPovisica !== raise) {
-    console.log(raise);
-  }
+  const year = raise;
+  return year;
 }
 setLastYearsRaise(2027);
 /*8*/
 function calculateRaise(broj) {
   const calcuLate = plata * (broj / 100);
+  console.log(calcuLate);
   return calcuLate;
 }
 calculateRaise(15);
